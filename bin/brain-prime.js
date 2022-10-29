@@ -5,6 +5,7 @@ import { getRandomIntFromInterval, maxNumber, minNumber } from '../src/utils.js'
 import runEngine from '../src/index.js';
 
 const isPrime = (number) => {
+  if (number === 1) return true 
   let divisor = 2;
   while (number % divisor !== 0) {
     divisor += 1;
