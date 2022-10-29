@@ -17,9 +17,9 @@ export default function runEngine(playRound, condition) {
       console.log('Correct!');
       currentRound += 1;
     } else {
-      currentRound = 1;
       console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.`);
       console.log(`Let's try again, ${name}!`);
+      return;
     }
   }
   console.log(`Congratulations, ${name}!`);
