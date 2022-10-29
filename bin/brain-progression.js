@@ -27,7 +27,7 @@ const generateProgression = () => {
 
 const hideNumber = (init) => {
   const progression = init;
-  const index = getRandomIntFromInterval(0, progression.length);
+  const index = getRandomIntFromInterval(0, progression.length - 1);
   const hiddenNumber = progression[index];
   progression[index] = replacer;
   return { progression, hiddenNumber };
